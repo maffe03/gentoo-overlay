@@ -96,6 +96,9 @@ num_cpus-1.13.0
 openssl-0.10.30
 openssl-probe-0.1.2
 openssl-sys-0.9.58
+objc-0.2.7
+objc-foundation-0.1.1
+objc_id-0.1.1
 object-0.20.0
 once_cell-1.4.0
 parking_lot-0.11.0
@@ -185,6 +188,15 @@ vec_map-0.8.2
 version_check-0.9.2
 want-0.3.0
 webbrowser-0.5.5
+widestring-0.4.0
+winapi-0.2.8
+winapi-0.3.8
+winapi-build-0.1.1
+winapi-i686-pc-windows-gnu-0.4.0
+winapi-util-0.1.2
+winapi-x86_64-pc-windows-gnu-0.4.0
+wincolor-1.0.2
+ws2_32-sys-0.2.1
 x11-clipboard-0.3.3
 xcb-0.8.2
 yaml-rust-0.4.4
