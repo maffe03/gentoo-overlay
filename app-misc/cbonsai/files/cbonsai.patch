@@ -1,0 +1,17 @@
+diff --git a/makefile b/makefile
+index 9107f02..4de2913 100644
+--- a/makefile
++++ b/makefile
+@@ -1,8 +1,5 @@
+ .PHONY: install
+-install: uninstall cbonsai.c
+-	gcc cbonsai.c -Wall -Wpedantic -l panel -l ncurses -o cbonsai
+-	cp cbonsai ~/.local/bin/cbonsai
+-
+-.PHONY: uninstall
+-uninstall:
+-	rm -f cbonsai ~/.local/bin/cbonsai
++install: cbonsai.c
++	gcc cbonsai.c -Wall -Wpedantic -l panel -l ncurses -l tinfo -o cbonsai
++	mkdir --parents ${D}/usr/bin/cbonsai
++	cp cbonsai ${D}/usr/bin/cbonsai
