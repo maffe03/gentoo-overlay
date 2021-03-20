@@ -5,7 +5,7 @@ EAPI=7
  
 DESCRIPTION="cbonsai is a beautifully random bonsai tree generator"
 HOMEPAGE="https://gitlab.com/jallbrit/cbonsai"
-SRC_URI="https://gitlab.com/jallbrit/${PN}/-/archive/master/${PN}-master.tar.gz"
+SRC_URI="https://gitlab.com/jallbrit/${PN}/-/archive/v${PV}/${PN}-v${PV}.tar.gz"
  
 LICENSE="GPL-3+"
 SLOT="0"
@@ -16,16 +16,11 @@ DEPEND="sys-libs/ncurses"
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
-PATCHES=(
-   "${FILESDIR}/${PN}.patch"
-)
-
 src_unpack() {
-   unpack "${PN}-master.tar.gz"
-   mv cbonsai-master cbonsai-1.0.0
-   echo ${D}
+   unpack "${PN}-v${PV}.tar.gz"
+   mv ${PN}-v${PV} ${P}
 }
 
 src_install() {
-	emake install
+   emake DESTDIR=${D} PREFIX="/usr" install
 }
