@@ -3,9 +3,7 @@
 
 <pkgmetadata>
   <maintainer type="person">
-    <email>dbarry@stevens.edu</email>
-    <name>Dan Barry</name>
-    <description>Primary maintainer</description>
+    <email>waffen03@gmail.com</email>
   </maintainer>
   <longdescription>A Spotify client for the terminal written in Rust</longdescription>
 </pkgmetadata>
