@@ -12,7 +12,7 @@ VERSION="2.92.0"
 COMMIT=""
 PACKAGE="blender-${VERSION}-linux64"
 
-SRC_URI="https://www.blender.org/download/Blender2.92/${PACKAGE}.tar.xz/ -> ${P}.tar.xz"
+SRC_URI="https://ftp.nluug.nl/pub/graphics/blender/release/Blender2.92/${VERSION}.tar.xz -> ${P}.tar.xz"
 
 LICENSE="|| ( GPL-2 BL )"
 SLOT="29"
