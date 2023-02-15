@@ -30,7 +30,7 @@ HOMEPAGE="https://wezfurlong.org/wezterm/"
 
 # Point to any required sources; these will be automatically downloaded by
 # Portage.
-SRC_URI="https://github.com/wez/wezterm/releases/download/nightly/wezterm-nightly.Ubuntu16.04.tar.xz"
+SRC_URI="https://github.com/wez/wezterm/releases/download/nightly/wezterm-nightly.Ubuntu22.04.tar.xz"
 
 # Source directory; the dir where the sources can be found (automatically
 # unpacked) inside ${WORKDIR}.  The default value for S is ${WORKDIR}/${P}
